@@ -9,3 +9,5 @@
 #else
 	#error Engg only supports Windows, for now!
 #endif
+
+#define BIT(x) (1 << x)
