@@ -7,8 +7,14 @@
     <Filter Include="Engg\Events">
       <UniqueIdentifier>{6AC8F451-D67D-6D47-5F72-671ECB26644B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engg\ImGui">
+      <UniqueIdentifier>{F01833D4-DCD0-7421-45D8-4D7D31AF0F12}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Engg\Events\MouseEvent.h">
       <Filter>Engg\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Engg\ImGui\ImGuiLayer.h">
+      <Filter>Engg\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Engg\Layer.h">
       <Filter>Engg</Filter>
     </ClInclude>
@@ -49,6 +58,9 @@
     <ClInclude Include="src\Engg\Window.h">
       <Filter>Engg</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -58,6 +70,9 @@
     <ClCompile Include="src\Engg\Application.cpp">
       <Filter>Engg</Filter>
     </ClCompile>
+    <ClCompile Include="src\Engg\ImGui\ImGuiLayer.cpp">
+      <Filter>Engg\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Engg\Layer.cpp">
       <Filter>Engg</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\Engg\Log.cpp">
       <Filter>Engg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>

@@ -4,3 +4,6 @@
 [submodule "Engg/vendor/GLFW"]
 	path = Engg/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
+[submodule "Engg/vendor/imgui"]
+	path = Engg/vendor/imgui
+	url = https://github.com/TheCherno/imgui
