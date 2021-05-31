@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 namespace Engg {
+	// Window for Windows platform
 	class WindowsWindow : public Window {
 	public:
 		WindowsWindow(const WindowProps& props);
