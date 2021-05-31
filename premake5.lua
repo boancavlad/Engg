@@ -9,6 +9,12 @@ workspace "Engg"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Engg/vendor/GLFW/include"
+
+include "Engg/vendor/GLFW"
+
 project "Engg"
 	location "Engg"
 	kind "SharedLib"
@@ -17,6 +23,9 @@ project "Engg"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "enpch.h"
+	pchsource "Engg/src/enpch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
@@ -24,7 +33,13 @@ project "Engg"
 
 	includedirs {
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

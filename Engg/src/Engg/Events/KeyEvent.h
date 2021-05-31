@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Engg {
 	class ENGG_API KeyEvent : public Event {
 	public:

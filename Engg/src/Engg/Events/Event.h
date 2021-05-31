@@ -1,8 +1,7 @@
 #pragma once
 
+#include "enpch.h"
 #include "Engg/Core.h"
-#include <string>
-#include <functional>
 
 namespace Engg {
 
