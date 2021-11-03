@@ -1,2 +1,2 @@
 # Engg
-Engg Engine, hopefully
+Engg Engine, (hopefully) a game engine in development.
